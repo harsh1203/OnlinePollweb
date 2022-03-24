@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poll Me | Polls List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+    {% block custom_css %}<style>
+        body{
+          
+                background-color: lightblue;
+        }
+        #text-center mt-3 mb-3{
+                color:black;
+        }
+        #login {
+            
+          
+            margin-left: 25%;
+            position: absolute;
+            margin-top: 25%;
+            margin-right: 25%;
+            margin-bottom: 25%;
+            font-style:bold;
+        }
+
+        #register {
+        
+            margin-left: 25%;
+            position: absolute;
+            margin-top: 25%;
+            margin-right: 25%;
+            margin-bottom: 25%;
+        }
+        .btn btn-primary{
+            text-align:center;
+        }
+        input[type=text]{
+            width: 120%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+          }
+          input[type=password]{
+            width: 120%;
+            padding: 12px 15px;
+            margin: 7px 0;
+            box-sizing: border-box;
+          }
+          input[type=email]{
+            width: 120%;
+            padding: 12px 15px;
+            margin: 5px 0;
+            box-sizing: border-box;
+          }
+          #welcome{
+              color:Black;
+          }
+          #edit{
+            color:Black;
+            text-align:center;
+          }
+          #detail{
+            color:Black;
+            text-align:center;
+          }
+          #create{
+            color:Black;
+            text-align:center;
+          }
+          #id_text.form-control{
+            width:642px;
+            height:128px;
+          }
+          #update{
+            color:white;
+            text-align:center;
+          }
+    </style>{% endblock custom_css %}
+
+</head>
+
+<body>
+    {% include 'includes/navbar.html' %}
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+    <!-- All javascript files goes under here    -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
